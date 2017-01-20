@@ -12,7 +12,6 @@ var DRIVY = DRIVY || {};
     var rendered = Mustache.render(template, {'actors': actors});
 
     document.querySelector('#actors').innerHTML = rendered;
-    document.querySelector('#response').style.display = 'none' ;
 
   };
 
@@ -28,8 +27,8 @@ var DRIVY = DRIVY || {};
     var actors = DRIVY.payActors(car, begin, end, distance, option);
 
     render(actors);
-    //Visibility to improve 
-    document.querySelector('#response').style.display = 'block' ;
+    //Visibility to improve
+    document.querySelector('.response').style.display = 'block' ;
     return;
   });
 }());
